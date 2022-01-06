@@ -1,0 +1,25 @@
+### get all items
+GET http://localhost:3000/items
+
+### create item
+POST http://localhost:3000/items
+Content-Type: application/json
+
+{
+  "name": "あつもの",
+  "price": 5.00,
+  "description": "なます",
+  "status": "SoldOut"
+}
+
+### get an item
+GET http://localhost:3000/items/4e2b28e5-fcc1-44d7-8605
+
+### update status
+PATCH http://localhost:3000/items/4e2b28e5-fcc1-44d7-8605-3843a5930c14
+Content-Type: application/x-www-form-urlencoded
+
+status=販売中
+
+### delete item
+DELETE http://localhost:3000/items/5b833f49-3109-41fd-b609-ca2d4fd08a79
